@@ -1,0 +1,196 @@
+.footer{
+    width: 100%;
+    height: 90vh;
+    background-color: #5b0888cd;
+    color: white;
+}
+.footer .topFooter{
+    display: grid;
+ grid-template-columns: repeat(4,auto);
+    align-items: center;
+    width: 95%;
+    height: 75%;
+    margin: 15px auto;
+}
+.footer .topFooter .about{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 70px;
+
+}
+.footer .topFooter .about .socials{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footer .topFooter .about  h2,
+.footer .topFooter .about p
+{
+    padding-bottom: 25px;
+    }
+
+
+.footer .topFooter .about .socials div .socialMedia{
+    width: 45px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.footer .topFooter .about .socials div .socialMedia{
+    filter: invert(100%);
+}
+.footer .topFooter .about .socials div .socialMedia:hover{
+    cursor: pointer;
+    transform: translateY(4px);
+    filter: invert(0%);
+}
+
+.footer  .end_footer{
+text-align: center;
+width: 70%;
+margin: 0 auto;
+ }
+ .footer  .end_footer h4{
+  color: black;
+  font-weight: 500%;
+}
+.footer .topFooter .AllProjects{
+    width: 12%;
+    height: 100%;
+     display: flex;
+    flex-direction: column;
+    padding: 70px 40px;
+
+}
+.footer .topFooter .AllProjects .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   height: 70%;
+    
+    color: rgba(245, 243, 240, 0.5);
+
+}
+.footer .topFooter .AllProjects  h2{
+    padding-bottom: 25px;
+}
+.footer .topFooter .AllProjects .projects span{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.footer .topFooter .Gallery{
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+padding: 70px 40px;
+}
+.footer .topFooter .Gallery .grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px 3px;
+}
+.footer .topFooter .Gallery h2{
+    padding-bottom: 25px;
+}
+.footer .topFooter .Gallery .grid-gallery .item .galImg{
+    width: 120px;
+    height: 120px;
+}
+.footer .topFooter .contact h2{
+    padding-bottom: 25px;
+}
+.footer .topFooter .contact{
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+padding: 70px 10px;
+}
+.footer .topFooter .contact .location{
+    padding-bottom: 25px;
+}
+.footer .topFooter .contact .connect{
+    padding: 0px;
+    text-align: start;
+}
+.footer .topFooter .contact .connect h3{
+    padding: 10px 0px;
+    color: rgba(245, 243, 240, 0.5);
+    align-items: start;
+
+}
+
+
+@media (max-width:1300px) {
+    .footer{
+        height: 170vh;
+    }
+.footer .topFooter{
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    width: 97%;
+    height: 80%;
+    margin: 0 auto;
+}   
+.footer .topFooter .about .socials{
+    width: 75%;
+}
+
+}
+@media (max-width:720px){
+    .footer{
+        height: fit-content;
+    }
+    .footer .topFooter{
+        grid-template-columns: repeat(1,auto);
+       
+        width: 90%;
+       
+    } .footer .topFooter .contact,
+    .footer .topFooter .AllProjects .projects{
+        margin: 0 auto;
+    }  
+    .footer .topFooter .AllProjects{
+        width: 85%;
+        height: 100%;
+         display: flex;
+        flex-direction: column;
+        padding: 70px 40px;
+        margin: 0 auto;
+    
+    }
+    .footer .topFooter .AllProjects .projects{
+       
+        flex-direction: row;
+         height: 70%;
+         width: 100%;
+        padding-right: 10px;
+        width: 100%;  
+    }
+}
+@media (max-width:450px){
+.footer .topFooter .about,.footer .topFooter .AllProjects,
+.footer .topFooter .Gallery,.footer .topFooter .contact{
+    font-size: 14px;
+    padding: 50px;
+   margin: 0 auto;
+   width: 80%;
+}
+.footer .topFooter .Gallery .grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3px 3px;
+}
+.footer .topFooter .AllProjects .projects span{
+       
+  
+    padding-right: 15px;
+ 
+}
+}

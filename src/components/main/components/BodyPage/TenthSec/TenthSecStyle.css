@@ -1,0 +1,126 @@
+.tenth_sec{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+
+}
+.tenth_sec .container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 30px;
+    position: relative;
+}
+.tenth_sec .container .img_left{
+    width: 40%;
+    height: 95%;
+}
+.tenth_sec .container .img_left .leftS  {
+    width: 100%;
+    height: 290px;
+    margin: 0 auto;
+ 
+}
+
+.tenth_sec .container .right_Section{
+    width: 60%;
+    height: 95%;
+    padding-left: 20px;
+}
+.tenth_sec .container .right_Section .mini_sec .img-final{
+    width: 200px;
+    height: 160px;
+
+}
+.tenth_sec .container .right_Section h2{
+    padding-top: 0;
+    padding-bottom: 30px;
+    color:  #8992DF;
+    text-align: start;
+}
+
+.tenth_sec .container .right_Section p{
+font-size: 16px;
+color: gray;
+margin-bottom: 15px;
+}
+.tenth_sec .container .right_Section .feature{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+    height: 40px;
+    margin: 15px 0;
+    color: white;
+    padding-left: 4px;
+    background-color: #5b0888cd;
+}
+.tenth_sec .container .right_Section .mini_sec .img-final{
+    margin-right: 8px;
+    height: 70%;
+    width: 30%;
+}
+.tenth_sec .container .right_Section .mini_sec{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+    height: 30%;
+    width: 80%;
+    margin: 25px auto;
+}
+.tenth_sec .container .right_Section .features{
+display: flex;
+width: 100%;
+align-items: center;
+font-size: 18px;
+padding: 7px;
+color: black;
+}
+
+.tenth_sec .container .right_Section .features  .icon{
+    width: 40px;
+}
+
+
+
+@media (max-width:900px) {
+    .tenth_sec{
+        height: 130vh;
+    }
+    .tenth_sec .container{
+        flex-direction: column;
+        height: 80%;
+        width: 95%;
+         }
+         .tenth_sec .container .img_left{
+            width: 70%;
+            height: 30%;
+            margin: 0 auto;
+        }
+        .tenth_sec .container .right_Section{
+          width: 90%;
+            margin: 0 auto;
+            margin-top: 12%;
+        }
+        .tenth_sec .container .right_Section .mini_sec{
+            height: 55%;
+            width: 98%;
+            margin: 20px auto;
+            
+        }
+        .tenth_sec .container .right_Section .mini_sec p{
+            font-size: 14px;
+        }
+        .tenth_sec .container .right_Section .features{
+            font-size: 14px;
+        }
+
+}
+@media(max-width:610px) {
+    .tenth_sec{
+        height: 160vh;
+    }  
+
+}

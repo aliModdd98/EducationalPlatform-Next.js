@@ -1,0 +1,110 @@
+.seven_sec{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 8rem;
+    background-color: white;
+}
+ .seven_sec .new_card{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    
+   
+ }
+ .seven_sec .new_card .card:hover{
+    transform: scale(1.1);
+    transition: 1.1s;
+ }
+
+ .seven_sec .new_card  .card{
+    width: 500px;
+    height:350px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    margin:1.2rem auto;
+    padding-right: 15px;
+   
+ }
+ /* .seven_sec .new_card  .card .Limg{
+    height: 100%;
+    width: 40%;
+    margin: 0 12 0 0;
+ } */
+ .seven_sec .new_card  .card  img {
+     width: 36%;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-right: 10px; 
+}
+.seven_sec .new_card  .card .right_sec{
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    height: 100%;
+    width: 58%;
+    float: right;
+    margin: 0 auto;
+    /* margin-bottom: 20px; */
+  
+}
+.seven_sec .new_card  .card .right_sec .date_admin{
+flex-direction: row;
+display: flex;
+height: fit-content;
+width: 90%;
+padding-bottom: 10px;
+}
+.seven_sec .new_card  .card .right_sec h4{
+    color: #8697DC;
+    margin-top: 25px;
+    padding-bottom:18px ;
+}
+.seven_sec .new_card  .card .right_sec span {
+font-size: 7px;
+color: gray;
+margin: 0;
+font-weight: bold;
+
+}
+.seven_sec .new_card  .card .right_sec span .icon{
+    width: 50px;
+    height: 50px;
+}
+.seven_sec .new_card  .card .right_sec .paragraph{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seven_sec .new_card  .card .right_sec h4{
+    color:  #8697DC;
+}
+
+@media (max-width:840px) {
+    .seven_sec{
+        width: 100%;
+        height: 120vh;
+        margin-bottom: 15rem;
+    }
+     .seven_sec .new_card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+       
+     }
+    
+}
+@media (max-width:554px) {
+    .seven_sec .new_card  .card{
+        width: 90%;
+        height:310px;
+        font-size: 14px;
+    }
+ 
+}

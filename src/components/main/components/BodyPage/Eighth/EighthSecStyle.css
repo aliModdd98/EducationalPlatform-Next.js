@@ -1,0 +1,70 @@
+.eighth-sec{
+    width: 100%;
+    height: 80vh;
+    margin-bottom:80px ;
+}
+.eighth-sec .pricing{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+.eighth-sec .pricing .itemPrice{
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+}
+.eighth-sec .pricing .itemPrice h2{
+    color: #8992DF;
+    margin-bottom: 12px;
+   
+}
+.eighth-sec .pricing .itemPrice .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.eighth-sec .pricing .itemPrice p{
+    margin-top: 12px;
+    width: 85%;
+  text-align: center;
+    margin: 12px auto;
+}
+.eighth-sec .pricing .itemPrice button{
+     border: 1px solid  #8992DF;
+    color:  #8992DF;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.eighth-sec .pricing .itemPrice button:hover{
+    background-color:  #8992DF;
+    color: white;
+}
+@media (max-width:700px) {
+    .eighth-sec{
+        height: fit-content;
+        margin-bottom:80px ;
+    }
+    .eighth-sec .pricing{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .eighth-sec .pricing .itemPrice{
+        margin-bottom: 15px;
+    }
+}
+

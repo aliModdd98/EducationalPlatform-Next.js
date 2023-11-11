@@ -1,0 +1,75 @@
+.ourTeam{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.ourTeam .cards{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+    padding-top: 30px;
+    margin-bottom: 5%;
+}
+.ourTeam .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    color: gray;
+}
+.ourTeam .cards .card .teacher-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+.ourTeam .cards .card .teacher-image img:hover{
+    cursor: pointer;
+}
+.ourTeam .cards .card .details{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+.ourTeam .cards .card .details h4{
+    color: #136AD5;
+    height: 8%;
+    padding-bottom: 27px;
+}
+.ourTeam .cards .card .details p{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.ourTeam .cards .card .details .socials  img{
+     width: 35px;
+     height: 35px;
+     padding-right:6px ;
+
+     padding-top: 10px;
+    /* filter:  brightness(200%) saturate(200%) hue-rotate(200deg);; */
+    } 
+    .ourTeam .cards .card .details .socials  img:hover{
+        transition: 1s;
+        transform: translateY(-7px);
+        filter: invert(70%);
+        cursor: pointer;
+    }
+    @media 
+    (max-width:550px) {
+        .ourTeam {
+            height: 220vh;
+        }     
+.ourTeam .cards {
+   flex-direction: column;
+}
+.ourTeam .cards .card{
+    margin-bottom: 25%;
+    width: 90%;
+}
+    }

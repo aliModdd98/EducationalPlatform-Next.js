@@ -1,0 +1,126 @@
+
+sec-container{
+  height: 110vh;
+  width: 100%;
+}
+.sec-container .grid_sec{
+  width: 45%;
+  margin-left: 30px;
+
+}
+.grid_sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.grid_sec > div {
+  padding: 20px;
+  text-align: start;
+}
+.sec-container .grid_sec span{
+  color: #809DDF;
+}
+
+.square{
+  width: 320px;
+  height: 370px;
+  background-color: #D0E1F7;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+.image_flow .cardImage{
+  width: 320px;
+  height: 390px;
+  position: absolute;
+  top: 40px;
+  right: 90px;
+
+}
+
+.sec-container .buttons{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+ 
+}
+.sec-container .buttons .btn_one{
+  /* padding: 5px 13px; */
+  border-radius: 25px;
+  background-color: #5b0888cd;
+  color: white;
+  width: 45%;
+  margin-right: 10px;
+}
+.sec-container .buttons .btn_two{
+  /* padding: 5px 17px; */
+  border-radius: 25px;
+  border: 1px solid #136AD5 ; 
+  color: #136AD5 ;
+  background-color: white;
+  width: 45%;
+  margin-left: 5px;
+}
+
+@media 
+(max-width:770px) {
+  .sec-container .six_container{
+    height: 120vh;
+  }
+  .square{
+    width: 260px;
+    height: 280px;
+    background-color: #D0E1F7;
+    position: absolute;
+    top: 14px;
+    right: 0;
+  }
+  .image_flow .cardImage{
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+  
+  }
+  
+}
+@media (max-width:450px){
+  
+  .sec-container .buttons{
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 25px auto;
+   
+  }
+.sec-container .buttons .btn_one,
+.sec-container .buttons .btn_two{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+
+.grid_sec {
+padding-top: 20%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  grid-template-rows: auto;
+  margin: 10px auto;
+}
+.image_flow .square .cardImage{
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: 30px;
+  right: 70px;
+
+}
+}

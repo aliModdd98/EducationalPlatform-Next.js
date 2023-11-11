@@ -1,0 +1,126 @@
+.App,.menu-container{
+  height: 24px;
+  text-align: center;
+  padding: auto;
+  
+}
+.menu-trigger {
+  /* position: absolute;
+  top: 20px;
+  right: 20px; */
+  height:24px;
+  width: 140px;
+align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 7px;
+  background-color: transparent;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+}
+
+/* .dropdown-menu::before{
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 175px;
+  height: 20px;
+  width: 20px;
+  background:gray;
+  transform: rotate(45deg);
+} */
+/* .menu-container.blur {
+  filter: blur(5px);
+} */
+.dropdown-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:2s ease;
+  
+}
+
+.dropdown-menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:2s ease;
+
+}
+
+
+h3{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  line-height: 1.2rem;
+}
+
+h3 span{
+  font-size: 14px;
+  color:  black;
+  font-weight: 400;
+}
+
+.dropdown-menu ul li{
+  padding: 10px  0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover a{
+  color: rgb(212, 33, 9);
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dropdownItem{
+  display: flex;
+  margin: 10px auto;
+}
+
+.dropdownItem img{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition:2s;
+}
+
+.dropdownItem a{
+  max-width: 100px;
+  margin-left: 10px;
+  transition: 2s;
+}
+.sizing-icon{
+font-size: 25px;
+  width: 1rem;
+  height: .8rem;
+}
+
+
+@media 
+(max-width:450px) {
+  .menu-trigger {
+    width: fit-content;
+  }
+  .dropdown-menu{
+    height: 80vh;
+  }
+}

@@ -1,0 +1,138 @@
+.third-sec{
+    width: 100%;
+    height: 105vh;
+    margin: 80px 0;
+    text-align: center;
+
+}
+ .third-title {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+ .third-title h2{
+color: #8992DF;
+margin-bottom: 30px;
+}
+  .para{
+    margin-bottom: 40px;
+}
+.third-sec .sub-grid{
+    display: grid;
+    padding: 40px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    height: 70%;
+    gap: 20px;
+    background-color: #E5CFF7;
+    margin-bottom: 100px;
+
+    
+}
+.third-sec .sub-grid .sub-item h3{
+    color: #8992DF;
+}
+
+.third-sec .sub-grid .sub-item{
+    border: 1px solid gray;
+    background-color: #FFFFFF;
+    padding: 10px 30px 20px;
+    border-radius: 15px;
+
+}
+
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid  #8992DF;
+  
+}
+.circle span {
+    font-size: 24px;
+    color:  #8992DF;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 940px){
+    .third-sec{
+        height: 110vh;
+        margin-bottom: 10%;
+    }
+  }
+  @media screen and (max-width: 830px) {
+    .third-sec{
+        height: 160vh;
+        margin-bottom: 10%;
+    }
+    .third-sec .sub-grid{
+        display: grid;
+        padding: 25px;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+        height: 70%;
+        gap: 15px;
+        background-color: #FFFFFF;
+        margin-bottom: 12%;
+        
+    }
+    /* / */
+    .third-title {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 45px;
+        text-align: center;
+    }
+     .third-title h2{
+    color: #8992DF;
+    margin-bottom: 20px;
+    }
+      .para{
+        margin-bottom: 20px;
+    }
+    .third-sec .sub-grid{
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
+        height: 70%;
+        gap: 10px;
+        background-color: #FFFFFF;
+        margin-bottom: 100px;
+        
+    }
+  }
+  @media screen and (max-width: 560px){
+    .third-sec{
+        height: 240vh;
+        margin-bottom: 10%;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+    }
+    .third-sec .sub-grid{
+        display: grid;
+        padding: 25px;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: auto;
+        height: 80%;
+        gap: 15px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        margin-bottom: 12%;
+        
+    }
+    .third-sec .sub-grid .sub-item{
+        width: 80%;
+        height: 90%;
+        font-size: 10px;
+        font-weight: none;
+        
+        margin: 0 auto;
+    }
+  }

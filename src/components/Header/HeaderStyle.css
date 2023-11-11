@@ -1,0 +1,335 @@
+
+.header{
+    width: 100%;
+     height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  display: flex;
+  background-color: #5b0888cd;
+  }
+a{
+  text-decoration: none;
+  margin-right: 10px;
+}
+  .content-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+    height: 200px;
+
+  }
+  
+  .content-header p, .content-header h3, .content-header button {
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .content-header h3{
+    color: white;
+  }
+  .boxteachers{
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  
+  .content-header  button{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: #4d1a39;
+    border-radius: 18px;
+    position: relative;
+    z-index: 2;
+   
+  }
+  .header .overlay .content-header button .btn:hover{
+  cursor: pointer;
+  
+}
+.btn:hover {
+  /* Styles to apply on hover */
+ cursor: pointer;
+}
+
+
+
+
+/* navBar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
+  height: 60px;
+  padding: 0 20px;
+  margin:0 30px ;
+  z-index: 10;
+  width: 100%;
+
+}
+.navbar .left-section .icon-text{
+  cursor: pointer;
+}
+.navbar .left-section {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  width: 65%;
+  justify-content: space-between;
+
+}
+.custom-icon {
+  font-size: 5px;
+  width: 1.2rem;
+  height: 0.8rem;
+  text-align: center;
+  margin-right: 4px;
+}
+
+.navbar .left-section .icon-text{
+width: fit-content;
+display: flex;
+align-items: center;
+justify-content: space-between; 
+height: 90%;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  padding-top: 12px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+
+.navbar .right-section {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar .right-section  button:hover{
+    background-color: white;
+    color: black;
+    transition: 2s;
+}
+.navbar .right-section  button{
+width: fit-content;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.navbar .right-section button .btn:hover{
+cursor: pointer;
+}
+
+
+/* hr */
+.horizontal-line {
+  border: none;
+  position: absolute;
+  border-top: 1px solid white;
+  margin: 0;
+  height: 0;
+  top: 70px;
+  left: 0;
+}
+/*main menu */
+
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+    margin:  0 auto;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 3;
+    text-align: center;
+    width: 95%;
+  }
+  .top-header .logo{
+    font-size: 25px;
+    font-weight: 600;
+    width: 20%;
+    height: fit-content;
+  }
+  .top-header .details :hover{
+    cursor: pointer;
+  }
+  .top-header .details .item:not(.active){
+color: white;
+  }
+  .top-header .details .item .active{
+    color: black;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 3px 5px;
+  }
+  .top-header .details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+  }
+  .top-header .details .item{
+    height: 100%;
+    height: fit-content;
+  }
+  .content-header{
+    text-align: center;
+  }
+  .top-header .btn  {
+    width: auto;
+    height: 50px;
+  display: flex;
+  }
+  .top-header .btn button{
+    width: auto;
+    height: 50px; 
+    border-radius: 18px;
+    color: white;
+    background-color: #4d1a39;
+  }
+Link{
+  text-decoration: none;
+}
+  /* responsive design */
+  @media (max-width: 940px) {
+    .header {
+      height: 90vh;
+    }
+  
+    .overlay
+     {
+      height: 90vh;
+
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 10px;
+    }
+  
+    .navbar .left-section,
+    .navbar .right-section {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+
+    .content-header {
+      width: 50%;
+     
+    }
+  
+    .overlay .top-header .logo{
+      display: none;
+         }
+  .overlay .top-header{
+    flex-direction: column;
+height: 20%;
+  }
+.top-header .details {
+  width: 100%;
+  font-size: 10px;
+  font-weight: none;
+  display: flex;
+    align-items: center;
+    height: 70%;
+    justify-content: space-between;
+}
+.top-header .details .item{
+  height: fit-content;
+  padding-right: 10px;
+}
+
+  }
+
+  @media (max-width: 460px) {
+.navbar{
+ padding-bottom: 25px;
+ 
+}
+.navbar .left-section{
+  font-size: 6px;
+  font-weight: none;
+  padding-right: 2px;
+}
+.overlay .btn button{
+  font-size: 18px;
+  height: fit-content;
+  width: 100%;
+}
+.overlay .content-header{
+  width: 70%;
+}
+  }
+  
+  /* Styles for screens with a maximum width of 600px */
+/*   
+  @media (max-width: 940px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 10px;
+    }
+  
+    .navbar .left-section,
+    .navbar .right-section {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .top-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .top-header .logo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .top-header .details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .top-header .details .item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  } */
